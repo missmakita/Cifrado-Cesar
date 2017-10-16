@@ -24,10 +24,7 @@ var str = respuesta;
 function cipher(str, key) {
 	
 	var result = '';
-	
-
 	for (var i = 0; i < str.length; i++) {
-
 		result += String.fromCharCode(((code - 65 + amount) % 26) + 65);
 	}
 	return result;
