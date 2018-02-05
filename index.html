@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="utf-8">
-	<title>Cifrado César</title>
+  <meta charset="utf-8">
+  <title>Cifrado César</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-	<h1>Cifrado César</h1>
-	<script src="app.js"></script>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h1>Cifrado César</h1>
+        <h3>Con esta herramienta puedes cifrar y descifrar cualquier palabra o frase!</h3>  
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s6">
+        <p class="justify">En criptografía, el cifrado César, también conocido como cifrado por desplazamiento, código de César o desplazamiento de César, es una de las técnicas de cifrado más simples y más usadas. Es un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Por ejemplo, con un desplazamiento de 3, la A sería sustituida por la D (situada 3 lugares a la derecha de la A), la B sería reemplazada por la E, etc. Este método debe su nombre a Julio César, que lo usaba para comunicarse con sus generales.
+        </p>
+        <p>Fuente <a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">Wikipedia</a></p>
+        <br>
+        <div class="center">
+          <a id="promptBtn" class="waves-effect waves-light btn">Haz la prueba!</a>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="card hoverable">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/Caesar3.svg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Cifrado César con desplazamiento de 3<i class="material-icons right">more_vert</i></span>
+            <p>El cifrado César mueve cada letra un determinado número de espacios en el alfabeto. En este ejemplousa un desplazamiento de tres espacios, así que una B en el texto original se convierte en una E en el texto codificado.</p>
+            <p><a href="https://es.wikipedia.org/wiki/Cifrado_C%C3%A9sar">Wikipedia</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Cifrado César con desplazamiento de 3<i class="material-icons right">close</i>
+            </span>
+            <p>De <a href="//commons.wikimedia.org/w/index.php?title=User:Cepheus&amp;action=edit&amp;redlink=1" clanew" title="User:Cepheus (page does not exist)">Cepheus</a> - <span class="int-own-work" lang="es">Trabpropio</span>, Dominio público, <a href="https://commons.wikimedia.org/w/index.php?curid=1235339">Enlace</a>
+            </p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <!-- Script -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="lib/app.js"></script>
 </body>
-</html>	
+</html> 
